@@ -12,7 +12,7 @@ exp.set("views", path.join(__dirname, "../views"));
 exp.get("/",(req,res)=>{ 
        res.render('web');       
 });      
- 
+       
 exp.listen(port,()=>{
     console.log("success...");
 });
