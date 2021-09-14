@@ -1,0 +1,497 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(./eduford_img/logodes.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav {
+  display: flex !important;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  height: 130px;
+  width: 160px;
+
+  border-radius: 46px;
+}
+
+.navlink {
+  flex: 1;
+  text-align: right;
+}
+
+.navlink ul li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  padding: 8px 12px;
+}
+.navlink ul li a {
+  color: rgb(223, 223, 223);
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* after means after this line  */
+.navlink ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: rgb(233, 248, 147);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.navlink ul li::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: rgb(233, 248, 147);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.navlink ul li:hover::after {
+  background-color: yellow;
+  width: 100%;
+}
+
+.navlink ul li:hover::before {
+  background-color: yellow;
+  width: 100%;
+}
+.body {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.body h1 {
+  font-size: 62px;
+}
+
+.body p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+}
+
+.btn {
+  font-size: 32px;
+  background-color: rgb(255, 248, 247);
+  width: 78px;
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(14, 7, 7);
+  border: 1px solid black;
+  padding: 5px 18px;
+  transition: 0.9s;
+  position: relative;
+}
+nav .fas {
+  display: none;
+}
+.btn:hover {
+  border: 3px solid black;
+  background-color: red;
+  transition: 1s;
+}
+.lang {
+  text-align: center;
+  margin-top: 34px;
+  background-color: black;
+}
+.lang h1 {
+  font-size: 64px;
+  color: blue;
+  display: inline;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.lang p {
+  font-size: 34px;
+  font-weight: 900;
+  background: blanchedalmond;
+  font-family: "Ubuntu", sans-serif;
+}
+.row .course {
+  height: 344px;
+  width: 290px;
+  border-radius: 12px;
+  margin-top: 34px;
+  text-align: center;
+  background: rgb(117, 224, 238);
+}
+.row .course:hover {
+  box-shadow: 14px 14px 14px 6px black;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.course h1 {
+  font-family: "Noto Sans JP", sans-serif;
+  /* text-align: center; */
+}
+.tem {
+  font-size: 34px;
+  height: 50px;
+  width: 100%;
+  font-weight: bolder;
+  background: #25e474;
+  border-radius: 8px;
+  font-weight: bolder;
+  text-align: center;
+}
+.course p {
+  border-radius: 10px;
+  text-align: center;
+  padding: 12px 12px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  font-size: large;
+  font-size: 23px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 58px;
+  margin-bottom: 56px;
+  justify-content: space-around;
+}
+
+.course button {
+  border-radius: 11px;
+  background-color: rgb(255, 248, 247);
+  width: 100px;
+  height: 34px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid black;
+  transition: 0.9s;
+  float: inline-end;
+}
+.course a {
+  text-decoration: none;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: bolder;
+  color: rgb(14, 7, 7);
+}
+.course button:hover {
+  border: 3px solid rgb(34, 34, 34);
+  background-color: rgb(252, 0, 0);
+  transition: 1s;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+}
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  border: none;
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+.navlink ul li a:hover {
+  color: rgb(19, 252, 50);
+  font-weight: 900;
+}
+.navlink ul li a:hover {
+  border-left: 2px solid yellow;
+  border-right: 2px solid yellow;
+  transition: 1.5s;
+}
+.navlink ul li:hover::after {
+  background-color: yellow;
+  width: 100%;
+}
+.carddiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.carddiv {
+  margin-top: 19px;
+}
+.card {
+  background-color: rgb(250, 239, 223) !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.card-title {
+  font-size: 29px;
+  font-weight: 900;
+}
+.row {
+  padding: 0px 14px !important;
+  margin-top: 19px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+/* footer style */
+
+.footer-dark {
+  padding: 50px 0;
+  color: #f0f9ff;
+  background-color: #282d32;
+}
+
+.footer-dark h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer-dark ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.footer-dark ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity: 0.8;
+}
+@media (max-width: 537px) {
+  .header nav a img {
+    height: 100px;
+    width: 120px;
+  }
+}
+@media (max-width: 767px) {
+  .footer-dark .item:not(.social) {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom: 36px;
+}
+
+@media (max-width: 767px) {
+  .footer-dark .item.text {
+    margin-bottom: 0;
+  }
+}
+
+.footer-dark .item.text p {
+  opacity: 0.6;
+  margin-bottom: 0;
+}
+
+.footer-dark .item.social {
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .footer-dark .item.social {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+.footer-dark .item.social > a {
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+  margin: 0 8px;
+  color: #fff;
+  opacity: 0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-dark .copyright {
+  text-align: center;
+  padding-top: 24px;
+  opacity: 0.3;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+.fa-facebook {
+  color: blue;
+}
+.fa-instagram {
+  color: #bc2a8d;
+}
+.fa-twitter {
+  color: #00b7ff;
+}
+.fa-linkedin {
+  color: #0077b5;
+}
+.fa-code {
+  font-size: 23px;
+  color: brown;
+}
+.carddiv {
+  background-image: url("./cardimage.jfif");
+}
+.footer-dark {
+  background-image: none;
+}
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  border: none;
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+    border-right: 0.15em solid orange;
+  }
+  to {
+    width: 100%;
+    border-right: 0.15em solid orange;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+/* The typing effect */
+@media (max-width: 967px) {
+  .typewriter h1 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 670px) {
+  .body h1 {
+    font-size: 34px;
+  }
+  .navlink ul li {
+    display: block;
+  }
+}
+/* text design */
+@media (max-width: 670px) {
+  .body h1 {
+    font-size: 34px;
+  }
+  .navlink ul li {
+    display: block;
+  }
+  .navlink {
+    position: absolute;
+    background-color: brown;
+    width: 260px;
+    height: 456px;
+    top: 12px;
+    padding: 12px 12px;
+    right: 0px;
+    display: none;
+    text-align: left;
+    transition: 1s;
+    z-index: 1;
+  }
+  nav .fa-window-close {
+    display: block;
+    color: white;
+    margin: 11px;
+    font-size: 23px;
+    cursor: pointer;
+  }
+  .fa-window-close {
+    z-index: 2;
+  }
+  .fa-ellipsis-v {
+    display: block;
+    color: rgb(255, 0, 0);
+    font-size: 43px;
+    margin: 12px;
+    padding: 9px 7px;
+    cursor: pointer;
+    border: 2px solid black;
+    height: 23px;
+    width: 23px;
+    text-align: center;
+  }
+  .lang h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 563px) {
+  .typewriter h1 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 342px) {
+  .typewriter h1 {
+    font-size: 18px;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+    border-right: 0.15em solid orange;
+  }
+  to {
+    width: 100%;
+    border-right: 0.15em solid orange;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
